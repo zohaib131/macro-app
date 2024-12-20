@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macro app</title>
+    <Link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Macro App</h2>
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter Age" required>
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+            <option value="">select Gender</option>
+            <option value="female">female</option>
+            <option value="male">male</option>
+        </select>
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" placeholder="Enter Height in cm" required>
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" placeholder="Enter Your Weight" required>
+        <label for="activity">Select Activity</label>
+        <select id="activity" required>
+            <option value="selectActivity">select activity level</option>
+            <option value="active">Very active (hard exercise/sports 6-7 days/week)</option>
+            <option value="superactive">Super active (very hard exercise, physical job, or training twice a day)</option>
+            <option value="light">Lightly active (light exercise/sports 1-3 days/week)</option>
+            <option value="moderate">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+        </select>
+
+        <button ondblclick="calculateTDEE()">Save</button>
+
+      <div class="result" id="result"></div>
+
+      <div class="savedList" id="savedList"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
